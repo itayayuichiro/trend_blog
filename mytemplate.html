@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>$pagetitle$ | レビューズ・アンリミテッド</title>
+$for(author-meta)$
+  <meta name="author" content="$author-meta$">
+$endfor$
+  <link rel="icon" href="./favicon.ico" />
+$if(date-meta)$
+    <meta name="dcterms.date" content="$date-meta$">
+$endif$
+$if(keywords)$
+    <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$">
+$endif$
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+$if(quotes)$
+  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
+$endif$
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+  <meta name="author" content="レビューズ・アンリミテッド">
+  <meta property="og:title" content="$pagetitle$ | レビューズ・アンリミテッド">
+  <meta property="og:type" content="website">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <a class="navbar-brand" href="#">レビューズ・アンリミテッド</a>
+	</nav>
+
+	<div class="container mt-5">
+    $if(title)$
+    <h1 class="mb-4">$title$</h1>
+    $endif$
+
+		<div class="row">
+			<div class="col-md-8">
+				<article>
+          $if(date)$
+          <p class="mb-2"><small>$date$</small></p>
+          $endif$
+					$body$
+				</article>
+			</div>
+			<div class="col-md-4">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">関連記事</h5>
+						<ul class="list-group">
+							<li class="list-group-item"><a href="#">記事タイトル1</a></li>
+							<li class="list-group-item"><a href="#">記事タイトル2</a></li>
+							<li class="list-group-item"><a href="#">記事タイトル3</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <footer class="mt-5">
+    <div class="container">
+      <p>© 2023 レビューズ・アンリミテッド</p>
+    </div>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>
