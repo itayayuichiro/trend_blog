@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>$pagetitle$ | レビューズ・アンリミテッド</title>
+  <title>$pagetitle$ | TrendPulse</title>
 $for(author-meta)$
   <meta name="author" content="$author-meta$">
 $endfor$
@@ -15,20 +15,28 @@ $endif$
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MYQHMQ2RCC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-MYQHMQ2RCC');
+  </script>
 $if(quotes)$
   <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
 $endif$
 $for(css)$
   <link rel="stylesheet" href="$css$">
 $endfor$
-  <meta name="author" content="レビューズ・アンリミテッド">
-  <meta property="og:title" content="$pagetitle$ | レビューズ・アンリミテッド">
+  <meta name="author" content="TrendPulse">
+  <meta property="og:title" content="$pagetitle$ | TrendPulse">
   <meta property="og:type" content="website">
 </head>
 <body>
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <a class="navbar-brand" href="#">レビューズ・アンリミテッド</a>
+	  <a class="navbar-brand" href="/">TrendPulse</a>
 	</nav>
 
 	<div class="container mt-5">
@@ -62,7 +70,7 @@ $endfor$
 
   <footer class="mt-5">
     <div class="container">
-      <p>© 2023 レビューズ・アンリミテッド</p>
+      <p>© 2023 TrendPulse</p>
     </div>
   </footer>
   
